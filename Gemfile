@@ -8,3 +8,9 @@ gemspec
 gem 'rspec', '~> 3.7'
 gem 'rubocop', '~> 1.41', '>= 1.41.1'
 gem 'simplecov', '~> 0.10', '< 0.18'
+
+group :test do
+  gem 'pry'
+  gem 'vcr'
+  gem 'webmock'
+end
