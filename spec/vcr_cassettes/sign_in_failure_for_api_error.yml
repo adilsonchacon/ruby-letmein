@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/app/session/sign_in
+    body:
+      encoding: UTF-8
+      string: '{"email":"invalid.user@example.com","password":"Secret.123#!"}'
+    headers:
+      Content-Type:
+      - application/json
+      Apptoken:
+      - 1AyGDHZzuobEfD1HvJjeQtuKioorzShu
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 3a0ca1f9-9dfe-42c0-a3be-9b8b338d75a6
+      X-Runtime:
+      - '0.269012'
+      Server-Timing:
+      - start_processing.action_controller;dur=1.03125, sql.active_record;dur=106.728271484375,
+        instantiation.active_record;dur=1.17333984375, process_action.action_controller;dur=225.30322265625
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"message":"invalid credentials"}'
+  recorded_at: Sun, 08 Jan 2023 17:17:07 GMT
+recorded_with: VCR 6.1.0
