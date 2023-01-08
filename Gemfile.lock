@@ -69,13 +69,13 @@ PLATFORMS
   x86_64-darwin-20
 
 DEPENDENCIES
-  pry
+  pry (~> 0.14.1)
   rspec (~> 3.7)
   rubocop (~> 1.41, >= 1.41.1)
   ruby-letmein!
   simplecov (~> 0.10, < 0.18)
-  vcr
-  webmock
+  vcr (~> 6.1.0)
+  webmock (~> 3.18.1)
 
 BUNDLED WITH
    2.2.3

@@ -10,7 +10,7 @@ gem 'rubocop', '~> 1.41', '>= 1.41.1'
 gem 'simplecov', '~> 0.10', '< 0.18'
 
 group :test do
-  gem 'pry'
-  gem 'vcr'
-  gem 'webmock'
+  gem 'pry', '~> 0.14.1'
+  gem 'vcr', '~> 6.1.0'
+  gem 'webmock', '~> 3.18.1'
 end

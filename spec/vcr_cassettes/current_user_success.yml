@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/app/session/current_user
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Apptoken:
+      - 1AyGDHZzuobEfD1HvJjeQtuKioorzShu
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2ODUwOGRhOC1kNmMwLTQzYzktODg5Zi1hNWIyNjA3MzkwODkiLCJleHAiOjE4MzA5MDEyMjYsImlzcyI6IkxldE1lSW4ifQ.osKB3GUmo3oR3no8yxbBzV3XjSaeN6T9T9pny0sfqOw
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"3be1f58c06b400153eaa51e19e3888f5"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 64b88c87-a121-4deb-9cbd-dae44670e8a0
+      X-Runtime:
+      - '0.026460'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.12939453125, sql.active_record;dur=13.443603515625,
+        instantiation.active_record;dur=0.419921875, process_action.action_controller;dur=20.19873046875
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":"bbc30dd6-cd9c-4f7c-89a3-e3b9725718d8","email":"valid.user@example.com","name":"valid.user","self_signed_up":false,"language":"en","timezone":"Europe/London","created_at":"2023-01-07T15:23:42.134Z","updated_at":"2023-01-07T15:23:42.134Z"}'
+  recorded_at: Sat, 07 Jan 2023 23:40:26 GMT
+recorded_with: VCR 6.1.0

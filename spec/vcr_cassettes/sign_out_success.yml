@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: http://localhost:3000/api/v1/app/session/sign_out
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Apptoken:
+      - 1AyGDHZzuobEfD1HvJjeQtuKioorzShu
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmNTljZmNhYi1iZWY2LTRlZDctOWZhYS03MTI3NDFjZTExNGUiLCJleHAiOjE4MzA5MDEyMjUsImlzcyI6IkxldE1lSW4ifQ.z0Y1GDgscHSnnFBJcQciETlLeC7JsV3XLFaR7JJWE_8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"cc70d723584341ddfac742dff2cbcb81"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 93d18275-28e7-4a09-b4b5-8f9be7518d4c
+      X-Runtime:
+      - '0.050251'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.130859375, sql.active_record;dur=31.052734375,
+        instantiation.active_record;dur=0.68896484375, process_action.action_controller;dur=42.7919921875
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"message":"user was successfully signed out"}'
+  recorded_at: Sat, 07 Jan 2023 23:40:25 GMT
+recorded_with: VCR 6.1.0

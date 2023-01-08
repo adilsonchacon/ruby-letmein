@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/app/session/signed_in
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Apptoken:
+      - 1AyGDHZzuobEfD1HvJjeQtuKioorzShu
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiY2VkNzEyYy1mYjcwLTQ1NzktYTgxYy1iNTYzOTM5NTFlOGUiLCJleHAiOjE4MzA5MDEyMjYsImlzcyI6IkxldE1lSW4ifQ.sDYUmovd4TQcjg5bpfeLtqxHUydqwBQmq0aCHcV7Ga0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"b75283e021089e3042bd6b943639205f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 385db9dd-6c65-45b3-85ee-ef2d2c83dfdb
+      X-Runtime:
+      - '0.028932'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.15576171875, sql.active_record;dur=14.714111328125,
+        instantiation.active_record;dur=0.385498046875, process_action.action_controller;dur=21.742919921875
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"message":"user is signed in"}'
+  recorded_at: Sat, 07 Jan 2023 23:40:26 GMT
+recorded_with: VCR 6.1.0

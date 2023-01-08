@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/app/session/signed_in
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Apptoken:
+      - 1AyGDHZzuobEfD1HvJjeQtuKioorzShu
+      Authorization:
+      - Bearer invalid token
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 73aee315-4d80-44aa-82c1-8e392e3e7718
+      X-Runtime:
+      - '0.017211'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.154052734375, sql.active_record;dur=5.918212890625,
+        instantiation.active_record;dur=0.093017578125, halted_callback.action_controller;dur=0.06494140625,
+        process_action.action_controller;dur=10.046142578125
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"message":"invalid token"}'
+  recorded_at: Sat, 07 Jan 2023 23:40:26 GMT
+recorded_with: VCR 6.1.0

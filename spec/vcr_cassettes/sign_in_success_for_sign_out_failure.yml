@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/app/session/sign_in
+    body:
+      encoding: UTF-8
+      string: '{"email":"valid.user@example.com","password":"Secret.123!#"}'
+    headers:
+      Content-Type:
+      - application/json
+      Apptoken:
+      - 1AyGDHZzuobEfD1HvJjeQtuKioorzShu
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"ed8eca6a5166a608f108aad98fbb7f7c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 983f8caa-3ca4-49f0-bb09-d360bf5b6614
+      X-Runtime:
+      - '0.300799'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.14306640625, sql.active_record;dur=24.64208984375,
+        instantiation.active_record;dur=0.231689453125, process_action.action_controller;dur=292.972900390625
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"auth_token":"eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIwYTJlOWI5ZS00NTJmLTQ1N2ItYjM1ZS0yYzM1NzE0OTRkNDQiLCJleHAiOjE4MzA5MDEyMjUsImlzcyI6IkxldE1lSW4ifQ.qH4AiSdpareGlIv1xN9ez1yHABM0ckg_w_b1pFwAkNM","expiry":1830901225}'
+  recorded_at: Sat, 07 Jan 2023 23:40:25 GMT
+recorded_with: VCR 6.1.0
